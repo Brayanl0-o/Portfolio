@@ -179,12 +179,12 @@ function sendForm(emailData){
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    const targetPage = this.dataset.target;
 
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+      if (pages[i].dataset.page === targetPage) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
@@ -193,7 +193,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[i].classList.remove("active");
       }
     }
-
   });
+  
 }
 
+document.getElementById('language-switch').addEventListener('change', function () {
+  console.log("execute translate")
+  const lang = this.value;
+  const currentTranslations = translations[lang];
+
+  Object.keys(currentTranslations).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = currentTranslations[id];
+  });
+});

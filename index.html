@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brayan Portfolio</title>
+  <title id="title-document">Brayan Portfolio</title>
 
   <!--
     - favicon
@@ -27,21 +27,24 @@
 
 <body>
 
+
   <!--
     - #MAIN
   -->
 
   <main>
-
+  
     <!--
       - #SIDEBAR
     -->
 
     <aside class="sidebar" data-sidebar>
-
-
-      
+   <select id="language-switch">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+  </select>
       <div class="sidebar-info">
+  
 
         <figure class="avatar-box">
           <img src="./assets/images/foto2.jpg" alt="Richard hanrick" width="80">
@@ -50,11 +53,13 @@
         <div class="info-content">
           <h1 class="name" title="Richard hanrick">Brayan Triana</h1>
 
-          <p class="title">Web Developer Full Stack<br> / Technical Certificate in Systems </p>
+          <p id="title" class="title">Web Developer Full Stack  </p>
+          <p id="title-two" class="title">Technical Certificate in Systems </p>
+        
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span id="show-contact">Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -74,7 +79,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <p id="contact-title" class="contact-title">Email</p>
 
               <a href="mailto:brayantandap@gmail.com<" class="contact-link">brayantandap@gmail.com</a>
             </div>
@@ -102,7 +107,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p id="birthday"  class="contact-title">Birthday</p>
 
               <time datetime="1982-06-23">May 31, 2002</time>
             </div>
@@ -116,7 +121,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p id="location" class="contact-title">Location</p>
 
               <address>Bogotá D.C. Colombia</address>
             </div>
@@ -164,23 +169,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button id="about" class="navbar-link  active" data-nav-link data-target="about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button id="resume" class="navbar-link" data-nav-link data-target="resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button id="portfolio" class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Tools</button>
+            <button id="tools" class="navbar-link" data-nav-link data-target="tools">Tools</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button id="contact" class="navbar-link" data-nav-link data-target="contact">Contact</button>
           </li>
 
         </ul>
@@ -196,17 +201,17 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 id="aboutme" class="h2 article-title">About me</h2>
         </header>
 
         <section class="about-text">
-          <p>
+          <p id="about-text-first">
             I am a web developer and a passionate of the world of technology. 
             I stand out for my ability to learn quickly, face new challenges and collaborate effectively in teams,
             Focused on problem solving and continuous improvement.
           </p>
 
-          <p>
+          <p id="about-text-two">
             My job is to build your website so that it is functional and user-friendly but at the same time attractive.
             Moreover, I am excited to continue growing as a developer and contribute to the success of challenging projects.
           </p>
@@ -220,7 +225,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 id="what-im-doing" class="h3 service-title">What i'm doing</h3>
 
           <ul class="service-list">
 
@@ -231,10 +236,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">API development </h4>
+                <h4 id="api-development" class="h4 service-item-title">API development </h4>
 
-                <p class="service-item-text">
-                  High-quality development of API's with better practices and excellent security.
+                <p id="api-development-text" class="service-item-text">
+                  High-quality API development following best practices, with a strong focus on performance, scalability, and security.
                 </p>
               </div>
 
@@ -247,9 +252,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 id="web-deveolpment" class="h4 service-item-title">Web development</h4>
 
-                <p class="service-item-text">
+                <p id="web-deveolpment-text"  class="service-item-text">
                   High-quality development of sites at the professional level.
                 </p>  
               </div>
@@ -263,9 +268,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Technical service</h4>
+                <h4 id="technical-service" class="h4 service-item-title">Technical service</h4>
 
-                <p class="service-item-text">
+                <p  id="technical-service-text" class="service-item-text">
                   Assistence with any computer problem, related with hardware or software
                 </p>
               </div>
@@ -279,9 +284,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Remote / Physical support</h4>
+                <h4 id="remote-suport" class="h4 service-item-title">Remote / Physical support</h4>
 
-                <p class="service-item-text">
+                <p id="remote-suport-text" class="service-item-text">
                   I make high-quality photos of any category at a professional level.
                 </p>
               </div>
@@ -1003,80 +1008,11 @@
               </ul>
             </li>
 
-           
-<!-- 
-            <li class="tools-post-item">
-              <ul class="container-tools">
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/angular-logo.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">Angular</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/HTML-logo.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">HTML5</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/CSS-logo.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">CSS</h3>
-                  </div>
-                </li>
-              </ul>
-            </li>
-
-            <li class="tools-post-item">
-              <ul class="container-tools">
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/angular-logo.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">Angular</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/HTML-logo.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">HTML5</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/CSS-logo.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">CSS</h3>
-                  </div>
-                </li>
-              </ul>
-            </li> -->
-
           </ul>
 
         </section>
 
       </article>
-
-
-
 
 
       <!--
@@ -1129,16 +1065,11 @@
 
   </main>
 
-
-
-
-
-
   <!--
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-
+  <script src="./assets/js/translations.js"></script>
   <!--
     - ionicon link
   -->
