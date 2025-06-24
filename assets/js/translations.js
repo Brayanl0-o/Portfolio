@@ -13,6 +13,7 @@ const translations = {
     'tools':'Tools',
     'contact':'Contact',
 
+
     'aboutme':'About me',
     'about-text-first':'  I’m a web developer driven by a deep passion for technology and problem solving.I specialize in building functional, responsive, and visually engaging websites with a strong focus on performance and user experience. I learn fast, adapt quickly to new challenges, and thrive in collaborative environments.',
     'about-text-two':'  With experience in both frontend and backend development, I aim to contribute to meaningful projects where I can grow, innovate, and deliver real value.',
@@ -25,11 +26,34 @@ const translations = {
     'technical-service-text':'Technical assistance for a wide range of computer issues, including both hardware and software support.',
     'remote-suport':'Remote / Physical support',
     'remote-suport-text':'Support available both remotely and in person, solving technical issues efficiently and with clear communication.',
-    '':'',
-    '':'',
-    '':'',
-
     
+    
+    'title-resume':'Resume',
+    'title-education':'Education',
+    'web-development-fullstack':'Web Development Full stack',
+    'web-development-fullstack-text':'',
+    'technical-certificate':'Technical Certificate in Systems',
+    'technical-certificate-place':'National Learning Academy',
+    'technical-certificate-text':'',
+    'avanced-excel':'Advanced Excel',
+    'avanced-excel-place':'British Institute',
+    'avanced-excel-text':'',
+    'title-experience':'Experience',
+    'support-analyst':'Support Analyst',
+    'support-analyst-place':'Construequipos',
+    'support-analyst-text':'',
+    'assistant-techician':'Assistant Technician in Systems Maintenance',
+    'assistant-techician-text':'',
+    'title-my-skills':'My skills',
+    
+    'title-languages':'Languages',
+    'spanish':'Spanish',
+    'english':'English',
+    'portugues':'Portugues',
+    'title-portfolio':'Portfolio',
+    '':'',
+    '':'',
+    '':'',
   },
   es: {
     'title-document': "Brayan Portafolio",
@@ -45,6 +69,7 @@ const translations = {
     'tools':'Herramientas',
     'contact':'Contacto',
 
+
     'aboutme':'Sobre mí',
     'about-text-first':'Soy desarrollador web con una fuerte pasión por la tecnología y la resolución de problemas. Me especializo en crear sitios funcionales, responsivos y visualmente atractivos, siempre enfocados en el rendimiento y la experiencia del usuario. Aprendo rápido, me adapto con facilidad a nuevos retos y disfruto trabajar en equipo.',
     'about-text-two':'Con experiencia tanto en frontend como en backend, busco aportar a proyectos desafiantes donde pueda crecer, innovar y generar valor real.',
@@ -57,9 +82,33 @@ const translations = {
     'technical-service-text':'Asistencia técnica para todo tipo de problemas informáticos, tanto de hardware como de software.',
     'remote-suport':'Soporte Remoto / Físico',
     'remote-suport-text':'Soporte disponible tanto de forma remota como presencial, resolviendo problemas técnicos de manera eficiente y con buena comunicación.',
-    '':'',
-    '':'',
-    '':'',
+    
+    
+    'title-resume':'Resumen',
+    'title-education':'Educación',
+    'web-development-fullstack':'Desarrollo Web Full Stack',
+    'web-development-fullstack-text':'',
+    'technical-certificate':'',
+    'technical-certificate-place':'',
+    'technical-certificate-text':'',
+    'avanced-excel':'',
+    'avanced-excel-place':'',
+    'avanced-excel-text':'',
+    'title-experience':'Experiencia',
+    'support-analyst':'Analista de Soporte',
+    'support-analyst-place':'',
+    'support-analyst-text':'',
+    'assistant-techician':'Técnico en Mantenimiento de Sistemas de Computo',
+    'assistant-techician-text':'',
+ 
+
+    'title-languages':'Lenguajes',
+    'spanish':'Español',
+    'english':'Ingles',
+    'portugues':'Portugues',
+
+
+    'title-portfolio':'Portafolio',
     '':'',
 
   }
