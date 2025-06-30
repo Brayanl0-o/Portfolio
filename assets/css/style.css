@@ -22,12 +22,12 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    hsl(209, 71%, 30%) 0%, 
+    hsla(233, 72%, 25%, 0.199) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(228, 64%, 22%, 0.747) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
@@ -658,37 +658,50 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+  .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+  .skills-list { padding: 20px; }
 
 
-.skills-item:not(:last-child) { margin-bottom: 15px; }
+  .skills-item:not(:last-child) { margin-bottom: 15px; }
 
-.skill .title-wrapper {
+
+.lang-level {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--orange-yellow-crayola);
+  margin-left: auto;
+}
+
+.lang-description-wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+.lang-description {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--white-2);
+  margin: 0;
 }
 
-.skill-progress-bg {
-  background: var(--jet);
+.lang-cert {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+  flex-shrink: 0;
+}
+
+.lang-cert img {
   width: 100%;
-  height: 8px;
-  border-radius: 10px;
-}
-
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
   height: 100%;
-  border-radius: inherit;
+  object-fit: cover;
 }
 
 
@@ -1274,6 +1287,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 8px;
     left: -43px;
   }
+  .btn-cert-container {
+  text-align: right;
+  width: 100%;
+  }
   .btn-certificados {
     display: inline-block;
     padding: 10px 20px;
@@ -1286,6 +1303,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: background 0.3s, transform 0.2s;
     margin-top: 1rem;
+    
   }
 
   .btn-certificados:hover {
@@ -1293,6 +1311,15 @@ textarea.form-input::-webkit-resizer { display: none; }
     transform: scale(1.05);
   }
 
+  hr.resume{
+    width: 40%;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #0e173d, #052452); /* negro grisáceo */
+
+    margin: 2rem auto 2rem auto;
+  }
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
 

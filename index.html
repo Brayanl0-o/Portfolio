@@ -373,10 +373,13 @@
             </li>
 
           </ol>
-          <a href="./docs/certificados.pdf" download class="btn-certificados">
-              Certificados
-            </a>
+          <div class="btn-cert-container">
+            <a href="./docs/certificados.pdf" download class="btn-certificados">Certificados</a>
+          </div>
+
         </section>
+
+        <hr class="resume">
      
         <section class="timeline">
 
@@ -452,53 +455,50 @@
 
         </section>
 
-        <section class="skill">
+        <hr class="resume">
 
-          <h3 id="title-languages" class="h3 skills-title">Languages</h3>
+        <section class="skill">
+            <h3 id="title-languages" class="h3 skills-title">Languages</h3>
 
           <ul class="skills-list content-card">
-<!-- 
+
+            <!-- English -->
             <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 id="spanish" class="h5">Spanish</h5>
-                <data value="99">99%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 99%;"></div>
-              </div>
-
-            </li> -->
-
-            <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 id="english" class="h5">English</h5>
-                <data value="65 ">65%</data>
+                <span class="lang-level">B1</span>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
+              <div class="lang-description-wrapper">
+                <p class="lang-description">
+                  I can read intermediate-level texts, understand general conversations,
+                  write structured emails, and participate in everyday interactions.
+                </p>
+                <figure class="lang-cert">
+                  <img src="./assets/images/cert-english.webp" alt="English Certificate" loading="lazy">
+                </figure>
               </div>
-
             </li>
 
-             <li class="skills-item">
-
+            <!-- Portuguese -->
+            <li class="skills-item">
               <div class="title-wrapper">
-                <h5 id="portugues" class="h5">Portugues</h5>
-                <data value="40">40%</data>
+                <h5 id="portugues" class="h5">Portuguese</h5>
+                <span class="lang-level">A2</span>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
+              <div class="lang-description-wrapper">
+                <p class="lang-description">
+                  I can understand basic phrases, introduce myself, ask simple questions,
+                  and read everyday content like signs or forms.
+                </p>
+                <figure class="lang-cert">
+                  <img src="./assets/images/cert-portugues.webp" alt="Portuguese Certificate" loading="lazy">
+                </figure>
               </div>
-
             </li>
 
           </ul>
-
         </section>
       </article>
 
@@ -870,6 +870,15 @@
               <ul class="container-tools">
                 <li class="tools-item">
                   <figure class="tools-banner-box">
+                    <img src="./assets/images/tools/others/access.png" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+  
+                  <div class="tools-content">
+                    <h3 class="h3 tools-item-title">Access</h3>
+                  </div>
+                </li>
+                <li class="tools-item">
+                  <figure class="tools-banner-box">
                     <img src="./assets/images/tools/others/visualstudio.png" alt="Design conferences in 2022" loading="lazy">
                   </figure>
   
@@ -1031,6 +1040,22 @@
 </body>
 
 </html>
+
+
+<!-- 
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 id="spanish" class="h5">Spanish</h5>
+                <data value="99">99%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 99%;"></div>
+              </div>
+
+            </li> -->
+
 <!-- 
         <section class="skill">
           <h3 id="title-my-skills" class="h3 skills-title">My skills</h3>
