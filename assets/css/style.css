@@ -1323,7 +1323,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
 
+  .skills-item>.title-wrapper{
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 20px;
+      width: min-content;
 
+  }
   /**
    * #PORTFOLIO, tools
    */
