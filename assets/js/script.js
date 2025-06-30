@@ -197,13 +197,44 @@ for (let i = 0; i < navigationLinks.length; i++) {
   
 }
 
+// document.getElementById('language-switch').addEventListener('change', function () {
+//   console.log("execute translate")
+//   const lang = this.value;
+//   const currentTranslations = translations[lang];
+
+//   Object.keys(currentTranslations).forEach(id => {
+//     const el = document.getElementById(id);
+//     if (el) el.textContent = currentTranslations[id];
+//   });
+// });
+
+// Función que traduce según idioma seleccionado
 document.getElementById('language-switch').addEventListener('change', function () {
-  console.log("execute translate")
   const lang = this.value;
+  translatePage(lang);
+});
+
+// Nueva función para aplicar las traducciones
+function translatePage(lang) {
   const currentTranslations = translations[lang];
 
   Object.keys(currentTranslations).forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.textContent = currentTranslations[id];
+    if (el) {
+      // Si es input o textarea, traduce el placeholder
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = currentTranslations[id];
+      } else {
+        // Si no, traduce el contenido de texto normal
+        el.textContent = currentTranslations[id];
+      }
+    }
   });
+}
+
+// 🟢 Cargar idioma por defecto al abrir la página
+document.addEventListener('DOMContentLoaded', () => {
+  const defaultLang = 'es'; // o 'en', según lo que prefieras
+  document.getElementById('language-switch').value = defaultLang;
+  translatePage(defaultLang);
 });

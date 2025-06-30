@@ -86,7 +86,7 @@
 
           </li>
 
-          <li class="contact-item">
+          <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -112,7 +112,7 @@
               <time datetime="1982-06-23">May 31, 2002</time>
             </div>
 
-          </li>
+          </li> -->
 
           <li class="contact-item">
 
@@ -123,7 +123,7 @@
             <div class="contact-info">
               <p id="location" class="contact-title">Location</p>
 
-              <address>Bogotá D.C. Colombia</address>
+              <address>Colombia</address>
             </div>
 
           </li>
@@ -373,9 +373,11 @@
             </li>
 
           </ol>
-
+          <a href="./docs/certificados.pdf" download class="btn-certificados">
+              Certificados
+            </a>
         </section>
-
+     
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -390,12 +392,12 @@
 
             <li class="timeline-item">
 
-              <h4 id="support-analyst" class="h4 timeline-item-title">Software Developer</h4>
-              <h4 id="support-analyst-place" class="h3 timeline-item-title">Banco de Bogotá</h4>
+              <h4 id="software-developer" class="h4 timeline-item-title">Software Developer</h4>
+              <h4 id="software-developer-place" class="h3 timeline-item-title">Banco de Bogotá</h4>
 
               <span>2024 — 2025</span>
 
-              <p id="support-analyst-text" class="timeline-text">
+              <p id="software-developer-text" class="timeline-text">
                 Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
                 molestias
                 exceptur.
@@ -405,12 +407,12 @@
 
              <li class="timeline-item">
 
-              <h4 id="support-analyst" class="h4 timeline-item-title">Web Developer</h4>
-              <h4 id="support-analyst-place" class="h3 timeline-item-title">Pacto de Productividad</h4>
+              <h4 id="web-developer" class="h4 timeline-item-title">Web Developer</h4>
+              <h4 id="web-developer-place" class="h3 timeline-item-title">Pacto de Productividad</h4>
 
               <span>2024</span>
 
-              <p id="support-analyst-text" class="timeline-text">
+              <p id="web-developer-text" class="timeline-text">
                 Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
                 molestias
                 exceptur.
@@ -549,7 +551,7 @@
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button id="all-buttom" data-select-item>All</button>
               </li>
 
               <li class="select-item">
@@ -744,7 +746,7 @@
       <article class="tool" data-page="tools">
 
         <header>
-          <h2 class="h2 article-title">Tools</h2>
+          <h2 id="tools-title" class="h2 article-title">Tools</h2>
         </header>
 
         <section class="tools-posts">
@@ -756,7 +758,7 @@
                 <ul class="container-tools">
                   <li class="tools-item">
                     <figure class="tools-banner-box">
-                      <img src="./assets/images/tools/angular-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                      <img src="./assets/images/tools/frontend/angular.png" alt="Design conferences in 2022" loading="lazy">
                     </figure>
     
                     <div class="tools-content">
@@ -765,7 +767,7 @@
                   </li>
                   <li class="tools-item">
                     <figure class="tools-banner-box">
-                      <img src="./assets/images/tools/HTML-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                      <img src="./assets/images/tools/frontend/html.png" alt="Design conferences in 2022" loading="lazy">
                     </figure>
     
                     <div class="tools-content">
@@ -774,7 +776,7 @@
                   </li>
                   <li class="tools-item">
                     <figure class="tools-banner-box">
-                      <img src="./assets/images/tools/CSS-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                      <img src="./assets/images/tools/frontend/css.png" alt="Design conferences in 2022" loading="lazy">
                     </figure>
     
                     <div class="tools-content">
@@ -783,7 +785,7 @@
                   </li>
                   <li class="tools-item">
                     <figure class="tools-banner-box">
-                      <img src="./assets/images/tools/sass-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                      <img src="./assets/images/tools/frontend/sass.png" alt="Design conferences in 2022" loading="lazy">
                     </figure>
     
                     <div class="tools-content">
@@ -792,7 +794,7 @@
                   </li>
                   <li class="tools-item">
                     <figure class="tools-banner-box">
-                      <img src="./assets/images/tools/tailwind-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                      <img src="./assets/images/tools/frontend/tailwind.png" alt="Design conferences in 2022" loading="lazy">
                     </figure>
     
                     <div class="tools-content">
@@ -801,7 +803,7 @@
                   </li>
                   <li class="tools-item">
                     <figure class="tools-banner-box">
-                      <img src="./assets/images/tools/javascrip.png" alt="Design conferences in 2022" loading="lazy">
+                      <img src="./assets/images/tools/frontend/js.png" alt="Design conferences in 2022" loading="lazy">
                     </figure>
     
                     <div class="tools-content">
@@ -810,7 +812,7 @@
                   </li>
                   <li class="tools-item">
                     <figure class="tools-banner-box">
-                      <img src="./assets/images/tools/Typescript_logo.png" alt="Design conferences in 2022" loading="lazy">
+                      <img src="./assets/images/tools/frontend/typescript.png" alt="Design conferences in 2022" loading="lazy">
                     </figure>
     
                     <div class="tools-content">
@@ -821,71 +823,11 @@
             </li>
 
             <li class="tools-post-item">
-              <h3>Others</h3>
-              <ul class="container-tools">
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/visualstudiocode.png" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">Visual Studio Code</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/postman-logo.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">Postman</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/virtualBox-logo.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">VirtualBox</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/GitHub-removebg-preview.webp" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">GitHub</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/hirens_boot.png" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">Hiren's Boot</h3>
-                  </div>
-                </li>
-                <li class="tools-item">
-                  <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/office.png" alt="Design conferences in 2022" loading="lazy">
-                  </figure>
-  
-                  <div class="tools-content">
-                    <h3 class="h3 tools-item-title">Office</h3>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            
-            <li class="tools-post-item">
               <h3>Backend</h3>
               <ul class="container-tools">
                 <li class="tools-item">
                   <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/nodejs-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                    <img src="./assets/images/tools/backend/nodejs.png" alt="Design conferences in 2022" loading="lazy">
                   </figure>
   
                   <div class="tools-content">
@@ -894,7 +836,7 @@
                 </li>
                 <li class="tools-item">
                   <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/express-js-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                    <img src="./assets/images/tools/backend/expressjs.png" alt="Design conferences in 2022" loading="lazy">
                   </figure>
   
                   <div class="tools-content">
@@ -903,7 +845,7 @@
                 </li>
                 <li class="tools-item">
                   <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/python-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                    <img src="./assets/images/tools/backend/python.png" alt="Design conferences in 2022" loading="lazy">
                   </figure>
   
                   <div class="tools-content">
@@ -912,7 +854,7 @@
                 </li>
                 <li class="tools-item">
                   <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/django-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                    <img src="./assets/images/tools/backend/django.png" alt="Design conferences in 2022" loading="lazy">
                   </figure>
   
                   <div class="tools-content">
@@ -922,12 +864,75 @@
               </ul>
             </li>
 
+           
             <li class="tools-post-item">
-              <h3>Databases</h3>
+              <h3 id="others" >Others</h3>
               <ul class="container-tools">
                 <li class="tools-item">
                   <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/mysql-logo2.webp" alt="Design conferences in 2022" loading="lazy">
+                    <img src="./assets/images/tools/others/visualstudio.png" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+  
+                  <div class="tools-content">
+                    <h3 class="h3 tools-item-title">Visual Studio Code</h3>
+                  </div>
+                </li>
+                <li class="tools-item">
+                  <figure class="tools-banner-box">
+                    <img src="./assets/images/tools/others/postman.png" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+  
+                  <div class="tools-content">
+                    <h3 class="h3 tools-item-title">Postman</h3>
+                  </div>
+                </li>
+                <li class="tools-item">
+                  <figure class="tools-banner-box">
+                    <img src="./assets/images/tools/others/virtualbox.png" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+  
+                  <div class="tools-content">
+                    <h3 class="h3 tools-item-title">VirtualBox</h3>
+                  </div>
+                </li>
+                <li class="tools-item">
+                  <figure class="tools-banner-box">
+                    <img src="./assets/images/tools/others/github.png" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+  
+                  <div class="tools-content">
+                    <h3 class="h3 tools-item-title">GitHub</h3>
+                  </div>
+                </li>
+                <li class="tools-item">
+                  <figure class="tools-banner-box">
+                    <img src="./assets/images/tools/others/hirensboot.png" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+  
+                  <div class="tools-content">
+                    <h3 class="h3 tools-item-title">Hiren's Boot</h3>
+                  </div>
+                </li>
+                <li class="tools-item">
+                  <figure class="tools-banner-box">
+                    <img src="./assets/images/tools/others/office.png" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+  
+                  <div class="tools-content">
+                    <h3 class="h3 tools-item-title">Office</h3>
+                  </div>
+                </li>
+                
+              </ul>
+            </li>
+
+
+            <li class="tools-post-item">
+              <h3 id="title-databases">Databases</h3>
+              <ul class="container-tools">
+                <li class="tools-item">
+                  <figure class="tools-banner-box">
+                    <img src="./assets/images/tools/database/MYSQL.png" alt="Design conferences in 2022" loading="lazy">
                   </figure>
   
                   <div class="tools-content">
@@ -936,7 +941,7 @@
                 </li>
                 <li class="tools-item">
                   <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/sqlite_logo.webp" alt="Design conferences in 2022" loading="lazy">
+                    <img src="./assets/images/tools/database/sqlite.png" alt="Design conferences in 2022" loading="lazy">
                   </figure>
   
                   <div class="tools-content">
@@ -945,7 +950,7 @@
                 </li>
                 <li class="tools-item">
                   <figure class="tools-banner-box">
-                    <img src="./assets/images/tools/mongo-logo.webp" alt="Design conferences in 2022" loading="lazy">
+                    <img src="./assets/images/tools/database/Mongodb.png" alt="Design conferences in 2022" loading="lazy">
                   </figure>
   
                   <div class="tools-content">
@@ -954,7 +959,6 @@
                 </li>
               </ul>
             </li>
-
           </ul>
 
         </section>
@@ -969,41 +973,42 @@
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 id="title-contact" class="h2 article-title">Contact</h2>
         </header>
 
+        <section class="contact-form">
+
+          <h3 id="form-title" class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input id="full-name" type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input data-form-input-name>
+
+              <input id="email" type="email" name="email" class="form-input" placeholder="Email address" required data-form-input data-form-input-email>
+
+              <input id="phone-number" type="phoneNumber" name="phoneNumber" class="form-input" placeholder="phone number" required data-form-input data-form-input-phone-number>
+
+            </div>
+
+            <textarea  id="menssage" name="message" class="form-input" placeholder="Your Message" required data-form-input data-form-input-message></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span id="button-send">Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+        
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51141489705!2d-74.107807!3d4.64829755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1726646842829!5m2!1ses-419!2sco"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input data-form-input-name>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input data-form-input-email>
-
-              <input type="phoneNumber" name="phoneNumber" class="form-input" placeholder="phone number" required data-form-input data-form-input-phone-number>
-
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input data-form-input-message></textarea>
-
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
         </section>
 
       </article>
