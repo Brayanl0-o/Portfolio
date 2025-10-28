@@ -21,7 +21,7 @@ const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
-
+ 
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
@@ -32,7 +32,7 @@ const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
-
+ 
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
 
@@ -238,3 +238,23 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('language-switch').value = defaultLang;
   translatePage(defaultLang);
 });
+
+
+  const overlaytwo = document.getElementById("overlaytwo");
+  const imgAmpliadaTwo = document.getElementById("imgAmpliadaTwo");
+
+  // Selecciona todas las imágenes de certificados
+  const imagenesCert = document.querySelectorAll(".lang-cert img");
+
+  imagenesCert.forEach(img => {
+    img.addEventListener("click", () => {
+      imgAmpliadaTwo.src = img.src;
+      overlaytwo.classList.add("active");
+      document.body.style.overflow = "hidden"; // bloquea el scroll
+    });
+  });
+
+  overlaytwo.addEventListener("click", () => {
+    overlaytwo.classList.remove("active");
+    document.body.style.overflow = ""; // restaura el scroll
+  });

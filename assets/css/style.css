@@ -703,8 +703,54 @@ main {
   height: 100%;
   object-fit: cover;
 }
+ .lang-cert img {
+    width: 250px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
 
+  .lang-cert img:hover {
+    transform: scale(1.05);
+  }
 
+  .overlaytwo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .overlaytwo.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .overlaytwo img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+
+  .overlaytwo.active img {
+    transform: scale(1);
+  }
+
+  .overlaytwo.active {
+    cursor: zoom-out;
+  }
 
 
 
